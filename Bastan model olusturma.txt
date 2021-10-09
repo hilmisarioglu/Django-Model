@@ -1,0 +1,26 @@
+
+python --version
+py -m venv env
+.\env\Scripts\activate
+pip install django
+pip freeze
+django-admin startproject main .
+py manage.py startapp store
+py manage.py runserver
+py manage.py makemigrations
+py manage.py migrate
+py manage.py createsuperuser
+
+--------------------------------
+
+$ python --version # check python version
+$ pip --version # check pip version
+$ py -m pip install # install pip
+$ python -m pip install --upgrade pip # optional -- upgrade pip version
+$ py -m venv env # create virtual env
+$ .\env\Scripts\activate # activate virtual env on powershell
+$ env\Scripts\activate # activate virtual env on cmd
+$ pip install django # install django
+$ pip freeze # control installed package
+$ pip freeze > requirement.txt # create requirement.txt (project required packages) for downloding github users etc.
+$ django-admin startproject clarusway # create a project
