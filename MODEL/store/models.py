@@ -13,7 +13,7 @@ class Product (models.Model):
         self.name = self.name + ' Eklendi '
         self.sayi = self.sayi* 2
         super(Product, self).save(*args, **kwargs)
-    
+        
     def __str__(self):
         return str(f'{self.name}')
     
