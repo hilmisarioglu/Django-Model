@@ -14,3 +14,6 @@ class Language(models.Model):
     creator = models.ForeignKey(Creator , on_delete=models.CASCADE)
     def __str__(self):
         return self.name
+
+class Boolean(models.Model):
+    boolean = models.BooleanField()
